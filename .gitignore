@@ -2,6 +2,9 @@
 # Portfolio .gitignore template — copy into each project repo as `.gitignore`
 # ======================================================================
 
+# ------ Personal learning notes (kept local, not pushed) -----------------
+PROJECT_101.md
+
 # ------ Secrets / credentials (NEVER commit) ----------------------------
 *.pem
 *.key

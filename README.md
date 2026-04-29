@@ -1,6 +1,6 @@
 # Serverless API Dynamo Lambda
 
-Terraform-provisioned serverless backend on AWS. Wires together API Gateway, Lambda, DynamoDB, S3, and EventBridge into a data aggregation API — deployable across environments via two input variables.
+Terraform-provisioned serverless backend on AWS. Wires together API Gateway, Lambda, DynamoDB, S3, and EventBridge into a data aggregation API deployable across environments via two input variables.
 
 ## Architecture
 

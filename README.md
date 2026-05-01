@@ -13,6 +13,8 @@ API Gateway POST /order ─┘         │
 
 Resource names are parameterized by `project` (default: `data-regen`) and `environment` (default: `dev`), producing names like `data-regen-prod-table` and `data-regen-prod-bucket`.
 
+This Terraform project deploys a fully serverless data aggregation backend on AWS, centering around a Node.js Lambda function. The function is designed to be triggered either on demand via an API Gateway HTTP POST request or on a scheduled basis every two hours using EventBridge. Once invoked, the Lambda executes business logic and stores a highly searchable, lightweight index of the event in a DynamoDB table configured for on-demand billing. Simultaneously, it generates a larger output artifact and saves it to an S3 bucket with versioning enabled, ensuring historical data is never overwritten. The entire stack, including the deployment and zipping of the Lambda code itself, is provisioned seamlessly through Infrastructure as Code.
+
 ## Stack
 
 Terraform 1.x · Lambda (Node.js 18) · API Gateway (REST) · DynamoDB (on-demand) · S3 (versioned) · EventBridge · IAM · CloudWatch Logs

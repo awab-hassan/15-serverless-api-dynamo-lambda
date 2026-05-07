@@ -1,6 +1,6 @@
 # Project 15: Serverless Event Aggregation API
 
-This project is a fully serverless API backend built on AWS using Terraform. It is designed to take incoming data—either from an on-demand HTTP API request or a scheduled background job—process it via a Node.js Lambda function, and safely store the results. 
+This project is a fully serverless API backend built on AWS using Terraform. It is designed to take incoming data either from an on-demand HTTP API request or a scheduled background job process it via a Node.js Lambda function, and safely store the results. 
 
 The entire stack is parameterized by `project` and `environment` variables, meaning you can easily spin up isolated `dev`, `staging`, and `prod` versions of this infrastructure without any naming conflicts.
 
